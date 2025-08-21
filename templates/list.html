@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Problems List</title>
+</head>
+<body>
+    <h1>Math Problems</h1>
+    <ul>
+        {% for problem in problems %}
+            <li><a href="/problems/{{ problem.id }}">{{ problem.title }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
